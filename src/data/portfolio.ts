@@ -6,6 +6,7 @@ export const projects = [
       "A comprehensive leadership assessment platform for evaluating resilience across organizational teams with detailed analytics and reporting.",
     stack: ["React", "TypeScript", "TailwindCSS", "Laravel"],
     url: "https://assessment.danpelton.com",
+    image: "/project-imgs/Resilient-Leader-Assessment.png",
   },
   {
     number: "02",
@@ -14,6 +15,7 @@ export const projects = [
       "An interactive return-on-investment calculator for GroBot's agricultural automation product line, helping businesses evaluate adoption value.",
     stack: ["React", "TypeScript", "TailwindCSS"],
     url: "https://roi.grobotlab.com",
+    image: "/project-imgs/GroBot-ROI-Calculator.png",
   },
   {
     number: "03",
@@ -22,6 +24,7 @@ export const projects = [
       "A full-featured documentation and help center with CMS-powered content, search functionality, and categorized support articles.",
     stack: ["React", "TypeScript", "TailwindCSS", "Strapi"],
     url: "https://help.grobotlab.com",
+    image: "/project-imgs/grobot-help-center.png",
   },
   {
     number: "04",
@@ -30,6 +33,7 @@ export const projects = [
       "A full-stack web platform for The LV Empire brand, built with a React frontend and a robust Laravel/PHP backend with MySQL database.",
     stack: ["React", "Laravel", "PHP", "MySQL"],
     url: "https://thelvempire.com",
+    image: "/project-imgs/empire-project.jpg",
   },
   {
     number: "05",
@@ -38,6 +42,7 @@ export const projects = [
       "A developer-focused content sharing and code snippet platform with real-time previews, syntax highlighting, and collaborative features.",
     stack: ["Next.js", "React", "Tailwind", "Node.js"],
     url: "https://pasteview.com",
+    image: "/project-imgs/pasteview-project.png",
   },
   {
     number: "06",
@@ -46,6 +51,7 @@ export const projects = [
       "A real estate web application for browsing and managing residential property listings with advanced search, filters, and a Node.js backend.",
     stack: ["React", "Redux", "Bootstrap", "Node.js"],
     url: "https://mycityresidences.com",
+    image: "/project-imgs/mycityresidences-project.jpg",
   },
   {
     number: "07",
@@ -54,6 +60,7 @@ export const projects = [
       "A custom GPT-powered web application for Diverge, integrating advanced AI capabilities with a polished React frontend and state management.",
     stack: ["React", "Redux", "Tailwind", "AI/GPT"],
     url: "http://gpt.diverge.ae",
+    image: "/project-imgs/diverge-gpt-project.png",
   },
   {
     number: "08",
@@ -62,6 +69,7 @@ export const projects = [
       "A full-featured e-commerce platform for craft beverages in the UK market, with cart management, user authentication, and Node.js backend.",
     stack: ["React", "Redux", "TailwindCSS", "Node.js"],
     url: "https://www.brewcart.co.uk",
+    image: "/project-imgs/brewcart-project.png",
   },
   {
     number: "09",
@@ -70,6 +78,7 @@ export const projects = [
       "A technology company website with a modern React frontend, featuring dynamic content, service showcases, and a scalable Node.js backend.",
     stack: ["React", "Redux", "TailwindCSS", "Node.js"],
     url: "https://reigntec.com",
+    image: "/project-imgs/reigntec-project.png",
   },
 ];
 
