@@ -1,6 +1,12 @@
 {
   "name": "portfolio-website-v2",
-  "version": "0.1.0",
+  "version": "2.0.0",
+  "description": "Modern full-stack developer portfolio built with Next.js 16, Tailwind CSS, and Framer Motion. Features animated particle background, 3D project cards, Resend contact form, and Upwork/Fiverr profile integration.",
+  "author": "Muhammad Mubeen Ahmad",
+  "keywords": [
+    "portfolio", "nextjs", "tailwindcss", "framer-motion", "react",
+    "full-stack", "mern", "lamp", "developer-portfolio", "typescript"
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev",
