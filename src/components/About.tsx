@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -125,10 +126,16 @@ export default function About() {
           >
             <div className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-9 text-center backdrop-blur-sm hover:border-[#00d4ff]/40 hover:shadow-[0_0_40px_rgba(0,212,255,0.1)] transition-all duration-300">
               {/* Avatar */}
-              <div className="relative w-24 h-24 mx-auto mb-5">
+              <div className="relative w-28 h-28 mx-auto mb-5">
                 <div className="absolute inset-[-4px] rounded-full bg-[conic-gradient(#00d4ff,#7c3aed,#00d4ff)] spin-slow" />
-                <div className="relative w-full h-full rounded-full bg-[#080b12] border-[3px] border-[#080b12] flex items-center justify-center">
-                  <span className="font-mono font-extrabold text-[1.8rem] text-[#00d4ff]">MM</span>
+                <div className="relative w-full h-full rounded-full border-[3px] border-[#080b12] overflow-hidden">
+                  <Image
+                    src="/avatar.png"
+                    alt="Muhammad Mubeen Ahmad"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
                 </div>
               </div>
 
