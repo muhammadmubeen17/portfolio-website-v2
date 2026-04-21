@@ -4,7 +4,7 @@ export const projects = [
     title: "Fortress Protection Services",
     description:
       "A professional security services website for a Melbourne-based company, showcasing their full range of protection services with a clean, modern design.",
-    stack: ["WordPress", "HTML5", "CSS3"],
+    stack: ["WordPress", "Elementor", "HTML5", "CSS3"],
     url: "http://securitycompanymelbourne.com.au/",
     image: "/project-imgs/Fortress-Protection-Services-project.png",
   },
@@ -13,7 +13,7 @@ export const projects = [
     title: "MIB Security Services",
     description:
       "A corporate website for MIB Security Services in Australia, presenting their security solutions, team, and client engagement features.",
-    stack: ["WordPress", "HTML5", "CSS3"],
+    stack: ["WordPress", "Elementor", "HTML5", "CSS3"],
     url: "https://mibsecurity.com.au/",
     image: "/project-imgs/MIB-Security-Services-project.png",
   },
