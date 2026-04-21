@@ -19,6 +19,15 @@ export const projects = [
   },
   {
     number: "03",
+    title: "Bling Salon and Spa",
+    description:
+      "A luxury salon and spa website for a Qatar-based beauty destination, featuring service showcases, online booking integration, and a refined design reflecting the brand's upscale identity.",
+    stack: ["WordPress", "Elementor", "HTML5", "CSS3"],
+    url: "https://blingsalonandspa.qa/",
+    image: "/project-imgs/Bling-Salon-and Spa-project.png",
+  },
+  {
+    number: "04",
     title: "GroBot ROI Calculator",
     description:
       "An interactive return-on-investment calculator for GroBot's agricultural automation product line, helping businesses evaluate adoption value.",
@@ -27,7 +36,7 @@ export const projects = [
     image: "/project-imgs/GroBot-ROI-Calculator.png",
   },
   {
-    number: "04",
+    number: "05",
     title: "GroBot Help Center",
     description:
       "A full-featured documentation and help center with CMS-powered content, search functionality, and categorized support articles.",
@@ -36,7 +45,7 @@ export const projects = [
     image: "/project-imgs/grobot-help-center.png",
   },
   {
-    number: "05",
+    number: "06",
     title: "Resilient Leader Assessment",
     description:
       "A comprehensive leadership assessment platform for evaluating resilience across organizational teams with detailed analytics and reporting.",
@@ -45,7 +54,7 @@ export const projects = [
     image: "/project-imgs/Resilient-Leader-Assessment.png",
   },
   {
-    number: "06",
+    number: "07",
     title: "Empire",
     description:
       "A full-stack web platform for The LV Empire brand, built with a React frontend and a robust Laravel/PHP backend with MySQL database.",
@@ -54,7 +63,7 @@ export const projects = [
     image: "/project-imgs/empire-project.jpg",
   },
   {
-    number: "07",
+    number: "08",
     title: "Pasteview",
     description:
       "A developer-focused content sharing and code snippet platform with real-time previews, syntax highlighting, and collaborative features.",
@@ -63,7 +72,7 @@ export const projects = [
     image: "/project-imgs/pasteview-project.png",
   },
   {
-    number: "08",
+    number: "09",
     title: "My City Residences",
     description:
       "A real estate web application for browsing and managing residential property listings with advanced search, filters, and a Node.js backend.",
@@ -72,7 +81,7 @@ export const projects = [
     image: "/project-imgs/mycityresidences-project.jpg",
   },
   {
-    number: "09",
+    number: "10",
     title: "Diverge GPT",
     description:
       "A custom GPT-powered web application for Diverge, integrating advanced AI capabilities with a polished React frontend and state management.",
@@ -81,7 +90,7 @@ export const projects = [
     image: "/project-imgs/diverge-gpt-project.png",
   },
   {
-    number: "10",
+    number: "11",
     title: "Brew Cart",
     description:
       "A full-featured e-commerce platform for craft beverages in the UK market, with cart management, user authentication, and Node.js backend.",
@@ -90,7 +99,7 @@ export const projects = [
     image: "/project-imgs/brewcart-project.png",
   },
   {
-    number: "11",
+    number: "12",
     title: "Reigntec",
     description:
       "A technology company website with a modern React frontend, featuring dynamic content, service showcases, and a scalable Node.js backend.",
