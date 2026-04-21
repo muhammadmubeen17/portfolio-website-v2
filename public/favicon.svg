@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#080b12"/>
+  <rect width="32" height="32" rx="8" fill="url(#grad)" opacity="0.15"/>
+  <text x="16" y="22" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-weight="700" font-size="13" fill="#00d4ff" letter-spacing="-0.5">MM</text>
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#0099cc"/>
+    </linearGradient>
+  </defs>
+</svg>

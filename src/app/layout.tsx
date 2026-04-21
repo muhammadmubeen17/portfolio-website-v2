@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     "Full Stack Developer specializing in MERN & LAMP stacks. Building modern web applications that exceed expectations.",
   keywords: ["Full Stack Developer", "MERN Stack", "LAMP Stack", "React", "Next.js", "Laravel", "Node.js"],
   authors: [{ name: "Muhammad Mubeen Ahmad" }],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "Muhammad Mubeen Ahmad — Full Stack Developer",
     description: "Full Stack Developer specializing in MERN & LAMP stacks.",
