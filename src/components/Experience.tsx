@@ -1,13 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Briefcase, Calendar, Building2 } from "lucide-react";
 import { experience } from "@/data/portfolio";
 
 export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative z-10 py-28 px-6 bg-[#0d1117]/60"
+      className="relative z-10 py-28 px-6 bg-slate-50/70"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
@@ -18,20 +19,20 @@ export default function Experience() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
           className="mb-16"
         >
-          <span className="font-mono text-[#00d4ff] text-xs tracking-[0.15em] uppercase block mb-3">
+          <span className="font-mono text-sky-600 text-xs font-bold tracking-[0.18em] uppercase block mb-3">
             04 / Experience
           </span>
-          <h2 className="text-[clamp(2rem,4vw,2.8rem)] font-extrabold text-white tracking-tight">
-            Where I&apos;ve Worked
+          <h2 className="text-[clamp(2.2rem,4.5vw,3.2rem)] font-extrabold text-slate-900 tracking-tight">
+            Career Journey &amp; Leadership
           </h2>
         </motion.div>
 
         {/* Timeline */}
-        <div className="relative max-w-3xl">
+        <div className="relative max-w-4xl mx-auto">
           {/* Vertical line */}
-          <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-[#00d4ff] via-[#00d4ff]/30 to-transparent hidden md:block" />
+          <div className="absolute left-6 top-4 bottom-4 w-0.5 bg-gradient-to-b from-sky-400 via-indigo-300 to-slate-200 hidden md:block" />
 
-          <div className="flex flex-col gap-14">
+          <div className="flex flex-col gap-10">
             {experience.map((item, i) => (
               <motion.div
                 key={i}
@@ -39,26 +40,29 @@ export default function Experience() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.65, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
-                className="grid grid-cols-1 md:grid-cols-[42px_1fr] gap-6 md:gap-8"
+                className="grid grid-cols-1 md:grid-cols-[48px_1fr] gap-6 md:gap-8 items-start"
               >
-                {/* Dot */}
-                <div className="hidden md:flex items-start justify-center pt-1">
-                  <div className="relative w-10 h-10 rounded-full bg-[#080b12] border-2 border-[#00d4ff] shadow-[0_0_20px_rgba(0,212,255,0.25)] flex items-center justify-center flex-shrink-0">
-                    <div className="w-3 h-3 rounded-full bg-[#00d4ff]" />
+                {/* Timeline Node Dot */}
+                <div className="hidden md:flex items-start justify-center pt-5">
+                  <div className="relative w-12 h-12 rounded-2xl bg-white border-2 border-sky-500 shadow-[0_0_20px_rgba(14,165,233,0.3)] flex items-center justify-center flex-shrink-0">
+                    <Briefcase size={18} className="text-sky-600" />
                   </div>
                 </div>
 
-                {/* Content */}
-                <div>
+                {/* Card */}
+                <div className="bg-white border border-slate-200/90 rounded-3xl p-7 md:p-8 shadow-sm hover:border-sky-300 hover:shadow-md transition-all duration-300">
                   {/* Meta row */}
-                  <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <span className="font-mono text-xs text-slate-500">{item.date}</span>
+                  <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
+                    <div className="flex items-center gap-2 text-xs font-mono font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
+                      <Calendar size={12} className="text-sky-600" />
+                      <span>{item.date}</span>
+                    </div>
                     {item.badge && (
                       <span
-                        className={`text-[0.65rem] font-semibold tracking-widest uppercase px-3 py-0.5 rounded-full border ${
+                        className={`text-[0.65rem] font-bold tracking-widest uppercase px-3 py-1 rounded-full border ${
                           item.badge.color === "cyan"
-                            ? "bg-[#00d4ff]/10 text-[#00d4ff] border-[#00d4ff]/25"
-                            : "bg-violet-500/10 text-violet-400 border-violet-500/25"
+                            ? "bg-sky-50 text-sky-700 border-sky-200"
+                            : "bg-indigo-50 text-indigo-700 border-indigo-200"
                         }`}
                       >
                         {item.badge.label}
@@ -66,16 +70,19 @@ export default function Experience() {
                     )}
                   </div>
 
-                  <h3 className="text-xl font-bold text-white mb-0.5">{item.role}</h3>
-                  <p className="text-[#00d4ff] text-sm font-medium mb-3">{item.company}</p>
-                  <p className="text-slate-400 text-sm leading-[1.85] mb-4">{item.description}</p>
+                  <h3 className="text-2xl font-extrabold text-slate-900 mb-1">{item.role}</h3>
+                  <div className="flex items-center gap-1.5 text-sky-600 font-bold text-sm mb-4">
+                    <Building2 size={15} />
+                    <span>{item.company}</span>
+                  </div>
+                  <p className="text-slate-600 text-sm md:text-base leading-[1.8] mb-6">{item.description}</p>
 
                   {/* Skills */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
                     {item.skills.map((s) => (
                       <span
                         key={s}
-                        className="text-xs font-medium px-3 py-1 rounded bg-white/[0.04] border border-white/[0.07] text-slate-400"
+                        className="text-xs font-semibold px-3 py-1.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 hover:border-sky-300 hover:text-sky-600 transition-colors"
                       >
                         {s}
                       </span>

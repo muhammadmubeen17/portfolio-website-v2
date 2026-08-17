@@ -32,15 +32,15 @@ export default function ParticleCanvas() {
 
     const createParticles = () => {
       particles = [];
-      const count = Math.floor((w * h) / 18000);
+      const count = Math.floor((w * h) / 22000);
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * w,
           y: Math.random() * h,
-          r: Math.random() * 1.2 + 0.3,
-          vx: (Math.random() - 0.5) * 0.18,
-          vy: (Math.random() - 0.5) * 0.18,
-          alpha: Math.random() * 0.5 + 0.1,
+          r: Math.random() * 1.2 + 0.4,
+          vx: (Math.random() - 0.5) * 0.16,
+          vy: (Math.random() - 0.5) * 0.16,
+          alpha: Math.random() * 0.4 + 0.1,
         });
       }
     };
@@ -48,11 +48,11 @@ export default function ParticleCanvas() {
     const draw = () => {
       ctx.clearRect(0, 0, w, h);
 
-      // Ambient glow blobs
+      // Ambient glow blobs (light mode)
       const blobs = [
-        { x: w * 0.15, y: h * 0.3, r: 380, color: "rgba(0,212,255,0.045)" },
-        { x: w * 0.85, y: h * 0.6, r: 420, color: "rgba(124,58,237,0.04)" },
-        { x: w * 0.5, y: h * 0.88, r: 320, color: "rgba(0,212,255,0.03)" },
+        { x: w * 0.2, y: h * 0.25, r: 420, color: "rgba(14,165,233,0.06)" },
+        { x: w * 0.8, y: h * 0.55, r: 460, color: "rgba(99,102,241,0.05)" },
+        { x: w * 0.45, y: h * 0.85, r: 380, color: "rgba(14,165,233,0.04)" },
       ];
       blobs.forEach((b) => {
         const grad = ctx.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.r);
@@ -70,9 +70,9 @@ export default function ParticleCanvas() {
           const dx = particles[i].x - particles[j].x;
           const dy = particles[i].y - particles[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 110) {
-            ctx.globalAlpha = (1 - dist / 110) * 0.25;
-            ctx.strokeStyle = "rgba(0,212,255,1)";
+          if (dist < 100) {
+            ctx.globalAlpha = (1 - dist / 100) * 0.18;
+            ctx.strokeStyle = "rgba(14,165,233,0.8)";
             ctx.lineWidth = 0.5;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
@@ -85,7 +85,7 @@ export default function ParticleCanvas() {
       // Particles
       particles.forEach((p) => {
         ctx.globalAlpha = p.alpha;
-        ctx.fillStyle = "#00d4ff";
+        ctx.fillStyle = "#0284c7";
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();

@@ -37,7 +37,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-[#080b12] text-slate-200 antialiased overflow-x-hidden">
+      <body className="min-h-screen bg-[#f8fafc] text-slate-800 antialiased overflow-x-hidden selection:bg-sky-500/20 selection:text-sky-900">
         {children}
       </body>
     </html>

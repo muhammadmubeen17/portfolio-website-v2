@@ -24,7 +24,7 @@ export const projects = [
       "A luxury salon and spa website for a Qatar-based beauty destination, featuring service showcases, online booking integration, and a refined design reflecting the brand's upscale identity.",
     stack: ["WordPress", "Elementor", "HTML5", "CSS3"],
     url: "https://blingsalonandspa.qa/",
-    image: "/project-imgs/Bling-Salon-and Spa-project.png",
+    image: "/project-imgs/Bling-Salon-and-Spa-project.png",
   },
   {
     number: "04",
@@ -130,7 +130,7 @@ export const skills = {
 export const experience = [
   {
     date: "June 2023 — Present",
-    role: "Project Manager",
+    role: "Senior Project Manager",
     company: "Burak Tec",
     description:
       "Leading cross-functional teams on full-cycle project delivery. Responsible for client relations, sprint planning, risk management, and ensuring timely delivery of web application projects.",
@@ -151,7 +151,7 @@ export const experience = [
     role: "Freelance Full Stack Developer",
     company: "Fiverr & Upwork",
     description:
-      "Delivered 50+ custom web solutions for clients across diverse industries globally. Specializing in MERN and LAMP stack applications, from MVPs to production-scale platforms.",
+      "Delivered 100+ custom web solutions for clients across diverse industries globally. Specializing in MERN and LAMP stack applications, from MVPs to production-scale platforms.",
     skills: ["MERN Stack", "LAMP Stack", "React", "Node.js", "Laravel"],
     badge: { label: "Freelance", color: "purple" as const },
   },
