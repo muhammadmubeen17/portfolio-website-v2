@@ -19,8 +19,15 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
-      
-      const sections = ["about", "skills", "projects", "experience", "freelance", "contact"];
+
+      const sections = [
+        "about",
+        "skills",
+        "projects",
+        "experience",
+        "freelance",
+        "contact",
+      ];
       const scrollPos = window.scrollY + 120;
 
       for (const section of sections) {
@@ -61,9 +68,13 @@ export default function Navbar() {
           onClick={() => handleNav("#home")}
           className="group font-mono text-lg font-bold text-slate-900 tracking-wide flex items-center gap-0.5 cursor-pointer"
         >
-          <span className="text-sky-600 transition-transform group-hover:-translate-x-0.5">&lt;</span>
-          <span className="font-extrabold">MM</span>
-          <span className="text-sky-600 transition-transform group-hover:translate-x-0.5">/&gt;</span>
+          <span className="text-sky-600 transition-transform group-hover:-translate-x-0.5">
+            &lt;
+          </span>
+          <span className="font-extrabold">Mubeen</span>
+          <span className="text-sky-600 transition-transform group-hover:translate-x-0.5">
+            /&gt;
+          </span>
         </button>
 
         {/* Desktop links */}

@@ -25,17 +25,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(14, 165, 233, 0.35);
-  border-radius: 3px;
+  background: linear-gradient(180deg, #0ea5e9 0%, #4f46e5 100%);
+  border-radius: 9999px;
+  border: 2px solid #f1f5f9;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(14, 165, 233, 0.65);
+  background: linear-gradient(180deg, #0284c7 0%, #4338ca 100%);
 }
 
 .gradient-text {

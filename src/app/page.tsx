@@ -1,4 +1,6 @@
-import { ParticleCanvas, Navbar, Hero } from "@/components/ClientShell";
+import ParticleCanvas from "@/components/ParticleCanvas";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
@@ -12,7 +14,7 @@ export default function Home() {
     <>
       <ParticleCanvas />
       <Navbar />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Skills />

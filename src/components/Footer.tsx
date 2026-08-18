@@ -20,7 +20,7 @@ export default function Footer() {
           <span className="text-sky-600 transition-transform group-hover:-translate-x-0.5">
             &lt;
           </span>
-          <span className="font-extrabold">MM</span>
+          <span className="font-extrabold">Mubeen</span>
           <span className="text-sky-600 transition-transform group-hover:translate-x-0.5">
             /&gt;
           </span>

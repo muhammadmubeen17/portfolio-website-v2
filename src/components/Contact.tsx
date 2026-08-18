@@ -71,7 +71,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-slate-900 text-xs font-bold">Location</p>
-                  <p className="text-slate-600 text-xs">Faisalabad, Pakistan</p>
+                  <p className="text-slate-600 text-xs">Pakistan</p>
                 </div>
               </div>
 

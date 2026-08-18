@@ -111,19 +111,44 @@ export const projects = [
 
 export const skills = {
   frontend: [
-    "React.js", "Next.js", "TypeScript", "JavaScript",
-    "Redux", "Tailwind CSS", "Bootstrap", "Material-UI",
-    "SCSS", "HTML5", "CSS3", "jQuery",
+    "React.js",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "Redux",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Material-UI",
+    "SCSS",
+    "HTML5",
+    "CSS3",
+    "jQuery",
   ],
   backend: [
-    "Node.js", "Express.js", "PHP", "Laravel",
-    "Flask", "REST APIs", "MongoDB", "MySQL",
-    "PostgreSQL", "Firebase",
+    "Node.js",
+    "Express.js",
+    "PHP",
+    "Laravel",
+    "Flask",
+    "REST APIs",
+    "MongoDB",
+    "MySQL",
+    "PostgreSQL",
+    "Firebase",
   ],
   tools: [
-    "Git / GitHub", "GitLab", "Bitbucket", "AWS",
-    "Google Cloud", "Vercel", "Netlify", "Postman",
-    "Jira", "Trello", "VS Code", "Strapi",
+    "Git / GitHub",
+    "GitLab",
+    "Bitbucket",
+    "AWS",
+    "Google Cloud",
+    "Vercel",
+    "Netlify",
+    "Postman",
+    "Jira",
+    "Trello",
+    "VS Code",
+    "Strapi",
   ],
 };
 
@@ -134,7 +159,12 @@ export const experience = [
     company: "Burak Tec",
     description:
       "Leading cross-functional teams on full-cycle project delivery. Responsible for client relations, sprint planning, risk management, and ensuring timely delivery of web application projects.",
-    skills: ["Project Management", "Team Leadership", "Client Relations", "Agile"],
+    skills: [
+      "Project Management",
+      "Team Leadership",
+      "Client Relations",
+      "Agile",
+    ],
     badge: { label: "Current", color: "cyan" as const },
   },
   {
@@ -158,11 +188,12 @@ export const experience = [
 ];
 
 export const typedPhrases = [
-  "full-stack apps.",
-  "MERN solutions.",
-  "LAMP stacks.",
-  "React frontends.",
-  "Laravel backends.",
-  "scalable APIs.",
-  "great experiences.",
+  "scalable SaaS products.",
+  "AI-powered applications.",
+  "modern full-stack solutions.",
+  "modern React/Next.js frontends.",
+  "MERN stack solutions.",
+  "powerful Laravel backends.",
+  "high-performance APIs.",
+  "seamless digital experiences.",
 ];
